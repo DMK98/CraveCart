@@ -1,0 +1,108 @@
+*{margin: 0;padding: 0;box-sizing: border-box; font-family: "Roboto Condensed", sans-serif;}
+:root{
+    --lead:#212121;
+    --gold-finger:#f2BD12;
+    --eye-ball:#FFFDF7;
+    --hint-yellow:#FCF1CC;
+    --pure-white:#FFF;
+}
+body{
+    background: var(--eye-ball);
+}
+/* ==========BASICSTYLE=============== */
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--lead);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.between{
+    justify-content: space-between;
+}
+.gap-2{
+    gap: 2rem;
+}
+.gap-3{
+    gap: 3rem;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: auto;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+
+}
+.signinBtn{
+    display: inline-block;
+    padding: .9rem 2rem;
+    background-color: var(--gold-finger);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    color: var(--pure-white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .3s ease-in;
+}
+.signinBtn:hover{
+    background: var(--lead);
+}
+
+
+
+/* ========== headerstyle  =============== */
+nav{
+    min-height: 14vh;
+    border: 1px solid black;
+    padding-inline: 1.5rem;
+}
+
+
+
+
+/* ==========Section style =============== */
+
+
+
+
+
+/* ==========footer style =============== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== MEDIA QUERY =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
+/* ========== =============== */
