@@ -28,6 +28,7 @@ a {
 .flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 li {
@@ -51,21 +52,26 @@ li {
     margin: auto;
     padding: 1rem;
 }
-img{
+
+img {
     max-width: 100%;
-    height:auto;
+    height: auto;
     margin: auto;
     display: block;
-
 }
+.p-top{
+    padding-top: 10rem;
+}
+.text-center{
+    text-align: center;
+}
+
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
     color: var(--gold-finger);
-
 }
-
 .btn {
     display: inline-block;
     padding: .9rem 2rem;
@@ -85,7 +91,7 @@ img{
 
 /* ========== headerstyle  =============== */
 nav {
-    min-height: 14vh;    
+    min-height: 14vh;
     padding-inline: 1.5rem;
 }
 
@@ -113,19 +119,73 @@ nav {
     display: none;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
 }
 
 /* ==========Section style =============== */
 
-.hero-section{
+.hero-section {
     /* background: var(--gold-finger); */
     min-height: calc(100vh - 14vh);
 }
-.content, .image-container{
+
+.content,
+.image-container {
     flex: 1;
+    flex-basis: 300px;
 }
+
+h1 {
+    font-size: 5.6vw;
+    color: var(--lead);
+}
+
+h1 span {
+    color: var(--gold-finger);
+}
+
+p {
+    font-size: 1.2rem;
+    color: grey;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.para {
+    margin-block: 2rem;
+}
+
+.social-icon {
+    background: var(--hint-yellow);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: .3s ease-in-out;
+}
+
+.social-icon:hover {
+    background: var(--lead);
+    color: var(--pure-white);
+}
+/* ==========section services start=============== */
+h5{
+    font-size:1.2rem;
+    letter-spacing: .2rem;
+    color: var(--gold-finger);
+    text-transform: uppercase;
+}
+h3{
+    font-size:1.2rem;
+    text-transform: capitalize;
+    
+}
+
+/* ==========section services end =============== */
 
 
 
@@ -159,16 +219,17 @@ nav {
     .desktop-action .hamburger {
         display: block;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         gap: 2rem;
         position: absolute;
         top: 20%;
         left: -50%;
-        transform: translateX(-50%);  
+        transform: translateX(-50%);
         background: var(--pure-white);
         width: 20rem;
         padding: 2rem;
@@ -177,7 +238,8 @@ nav {
         box-shadow: rgba(0, 0, 0, 0.64) 8px 8px 8px;
         transition: all .5s ease-in-out;
     }
-    .mobile-menu-active{
+
+    .mobile-menu-active {
         left: 50%;
         transform: translateX(-50%);
 
@@ -185,8 +247,23 @@ nav {
 
 }
 
+/* ========== hero section start here=============== */
 
-/* ========== =============== */
+
+h1 {
+    font-size: 3.6rem; 
+}
+.content{
+    padding-top: 3rem;
+}
+.gap-2 {
+    gap: 1.4rem;
+}
+.gap-4 {
+    gap: 1.4rem;
+}
+
+
 /* ========== =============== */
 /* ========== =============== */
 /* ========== =============== */
