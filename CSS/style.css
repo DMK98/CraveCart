@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Condensed", sans-serif;
-    /* border:.1rem solid red; */
+    /* border: .1rem solid red; */
 }
 
 :root {
@@ -59,19 +59,29 @@ img {
     margin: auto;
     display: block;
 }
-.p-top{
+
+.p-top {
     padding-top: 10rem;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-half {
+    margin-top: .5rem;
+}
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
     color: var(--gold-finger);
 }
+
 .btn {
     display: inline-block;
     padding: .9rem 2rem;
@@ -172,21 +182,108 @@ p {
     background: var(--lead);
     color: var(--pure-white);
 }
+
 /* ==========section services start=============== */
-h5{
-    font-size:1.2rem;
+h5 {
+    font-size: 1.2rem;
     letter-spacing: .2rem;
     color: var(--gold-finger);
     text-transform: uppercase;
 }
-h3{
-    font-size:1.2rem;
+
+h3 {
+    font-size: 3.7rem;
     text-transform: capitalize;
-    
+    color: var(--lead);
+}
+
+.service-card {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.service-card h2 {
+    margin: 1.5rem 0 1rem 0;
 }
 
 /* ==========section services end =============== */
+/* ========== Section Menu start=============== */
+.menu-order-card {
+    flex: 1;
+    /* flex-basis: 300px; */
+    background: var(--pure-white);
+    padding: 0 1rem 2rem 1rem;
+    border: .1rem solid var(--gold-finger);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.64) 8px 8px 8px;
+    transition: all .5s ease-in-out;
+}
 
+.order-card-image img {
+    width: 10rem;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 10px 10px);
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: var(--lead);
+}
+
+.menu-order-card .price {
+    font-size: 1.7rem;
+    color: var(--gold-finger);
+    padding: 1rem 0 1rem 0;
+}
+
+/* this will be deleted after adding JS */
+.menu-container {
+    border: 1px solid;
+}
+
+/* ========== Section Menu end=============== */
+/* ========== Review Section Start=============== */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.review-card {
+    width: 650px;
+    max-width: 100%;
+    flex: 1;
+}
+
+.profile {
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fa-star {
+    color: var(--gold-finger);
+}
+.review-arrow{
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius:100vw;
+    background: var(--gold-finger);
+    color: var(--lead);
+    align-items: center;
+    text-align: center;
+    line-height: 2.5rem;
+
+
+}
+
+
+/* ========== Review Section End =============== */
 
 
 /* ==========footer style =============== */
@@ -245,26 +342,43 @@ h3{
 
     }
 
+
+    /* ========== hero section start here=============== */
+
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    .content {
+        padding-top: 3rem;
+    }
+
+    .gap-2 {
+        gap: 1.4rem;
+    }
+
+    .gap-4 {
+        gap: 1.4rem;
+    }
+
+
+    /* ========== Section service card=============== */
+    .service-card-box {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    /* ========== Section Menu=============== */
+
+
+
 }
 
-/* ========== hero section start here=============== */
 
 
-h1 {
-    font-size: 3.6rem; 
-}
-.content{
-    padding-top: 3rem;
-}
-.gap-2 {
-    gap: 1.4rem;
-}
-.gap-4 {
-    gap: 1.4rem;
-}
-
-
-/* ========== =============== */
 /* ========== =============== */
 /* ========== =============== */
 /* ========== =============== */

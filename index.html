@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+
+
 </head>
 
 <body>
@@ -51,7 +55,7 @@
     </header>
     <!--============ SECTION ===============  -->
     <main>
-        <section class="hero">
+        <section class="hero-container">
             <div class="hero-section flex wrapper gap-4">
                 <div class="content">
                     <h1>Enjoy Your Delicious
@@ -84,37 +88,145 @@
 
             </div>
         </section>
-        <section class="services">
+        <section class="services-container">
             <div class="wrapper p-top">
                 <div class="text-center">
                     <h5>OUR SERVICES</h5>
-                    <p>How does with it</p>
+                    <h3>How does it works ?</h3>
                 </div>
-                <div class="service-card-box">
+                <div class="service-card-box flex text-center mt-4 gap-4">
                     <div class="service-card">
                         <div class="image-container">
                             <img src="./Images/easy-to-order.png" alt="">
                         </div>
-                        <h3>Easy to order</h3>
+                        <h2>Easy to order</h2>
                         <p>You only need a few steps in ordering foods.</p>
                     </div>
                     <div class="service-card">
                         <div class="image-container">
                             <img src="./Images/fast-delivery.png" alt="">
                         </div>
-                        <h3>Fast Delivery</h3>
+                        <h2>Fast Delivery</h2>
                         <p>Delivery that is always on time even faster</p>
                     </div>
                     <div class="service-card">
                         <div class="image-container">
                             <img src="./Images/best-quality.png" alt="">
                         </div>
-                        <h3>Best Quality</h3>
+                        <h2>Best Quality</h2>
                         <p>Not only fast for us in quality also number one.</p>
                     </div>
                 </div>
 
             </div>
+        </section>
+        <section class="menu-container">
+            <div class="menu wrapper p-top">
+                <div class="text-center">
+                    <h5>OUR Menu</h5>
+                    <h3>The Most Popular</h3>
+                </div>
+                <div class="menu-card-list flex text-center mt-4 gap-2">
+                    <!-- this will create by JS -->
+                    <!-- <div class="menu-order-card">
+                        <div class="order-card-image">
+                            <img src="./Images/burger.png" alt="burger">
+                        </div>
+                        <h4>Double Beef burger</h4>
+                        <h4 class="price">Price $200</h4>
+                        <a href="" class="add-cart-btn btn">Add to Cart</a>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </section>
+        <section class="review-container">
+            <div class="review wrapper p-top flex gap-3">
+                <div class="image-container">
+                    <img src="./Images/delivery-boy-with-phone.png" alt="">
+                </div>
+                <div class="content">
+                    <h5>Our Reviews</h5>
+                    <h2>What Thay Say?</h2>
+                    <div class="review-card">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide mt-4">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="./Images/profile1.jpeg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Guys hawkins</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="para">
+                                            I had a wonderful dining experience at this hotel.
+                                            The food was fresh, delicious, and full of flavor.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mt-4">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="./Images/profile2.jpeg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Sophia Anderson</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="para">
+                                            The taste was excellent and everything was prepared perfectly.
+                                            The presentation of the dishes was also very appealing.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mt-4">
+                                    <div class="flex gap-2">
+                                        <div class="profile">
+                                            <img src="./Images/profile3.jpeg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Olivia Smith</h4>
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="para">
+                                            The ingredients tasted fresh and high quality.
+                                            The portion sizes were generous and satisfying.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                            <div class="flex between">
+                                <a href="" class="review-arrow " id="prev">
+                                    <i class="fa-solid fa-arrow-left-long"></i></a>
+                                <a href="" class="review-arrow " id="next">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
     </main>
@@ -123,6 +235,17 @@
 
     </footer>
 
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./script/main.js"></script>
 
 </body>
 
