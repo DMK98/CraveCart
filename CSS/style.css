@@ -76,6 +76,10 @@ img {
     margin-top: .5rem;
 }
 
+.mt-auto {
+    margin: auto;
+}
+
 .logo {
     font-size: 2rem;
     font-weight: bold;
@@ -269,22 +273,60 @@ h4 {
 .fa-star {
     color: var(--gold-finger);
 }
-.review-arrow{
+
+.review-arrow {
     width: 2.5rem;
     aspect-ratio: 1;
-    border-radius:100vw;
+    border-radius: 100vw;
     background: var(--gold-finger);
     color: var(--lead);
     align-items: center;
     text-align: center;
     line-height: 2.5rem;
-
-
 }
 
-
 /* ========== Review Section End =============== */
+/* ========== Application Section start =============== */
+.app-container {
+    background: var(--hint-yellow);
+    padding: 3rem 6rem;
+    border-radius: 3rem;
+}
 
+.app-container h2 {
+    font-size: 4.5rem;
+}
+
+.app-container .image-container img {
+    width: 25rem;
+}
+
+/* ========== Application Section End =============== */
+/* ========== subscribe  Section start =============== */
+.email-input-container {
+    width: 43rem;
+    max-width: 100%;
+    background: var(--pure-white);
+    padding: .8rem;
+    box-shadow: rgba(0, 0, 0, 0.64) 8px 8px 8px;
+    transition: all .5s ease-in-out;
+    border-radius: 1rem;
+}
+
+input[type="email"] {
+    flex: 1;
+    height: 7vh;
+    background: transparent;
+    font-size: 1.1rem;
+    border: none;
+    padding-left: 1rem;
+}
+
+input[type="email"]:focus {
+    outline: none;
+}
+
+/* ========== subscribe  Section end =============== */
 
 /* ==========footer style =============== */
 
@@ -371,9 +413,25 @@ h4 {
         font-size: 3rem;
     }
 
-    /* ========== Section Menu=============== */
+    /* ========== review Section start =============== */
+    .review-container .content {
+        min-width: 100%;
+    }
+
+    /* ========== review Section start =============== */
+
+    /* ========== Application Section start =============== */
 
 
+    /* ========== Application Section end =============== */
+
+    .app-container {
+        padding: 2.2rem;
+    }
+
+    .application .content h2 {
+        font-size: 3.5rem;
+    }
 
 }
 
