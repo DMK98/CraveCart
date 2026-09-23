@@ -75,6 +75,9 @@ img {
 .mt-half {
     margin-top: .5rem;
 }
+.mt-one-half {
+    margin-top: 1.5rem;
+}
 
 .mt-auto {
     margin: auto;
@@ -311,6 +314,7 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.64) 8px 8px 8px;
     transition: all .5s ease-in-out;
     border-radius: 1rem;
+    margin: 4rem auto 0 auto;
 }
 
 input[type="email"] {
@@ -325,10 +329,33 @@ input[type="email"] {
 input[type="email"]:focus {
     outline: none;
 }
-
 /* ========== subscribe  Section end =============== */
 
-/* ==========footer style =============== */
+/* ==========footer style start =============== */
+
+.footer-container{
+    margin-top: 10rem;
+    padding-block:4rem ;
+    background: var(--hint-yellow);    
+}
+.footer-wrapper{
+    flex: 1;
+}
+.footer-wrapper .social-icon{
+    background: var(--pure-white);
+} 
+.footer-wrapper .social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
+.footer-link{
+    color: grey;
+    font-size: 1.1rem;
+}
+.footer-link:hover{
+    color: var(--lead);
+}
+/* ==========footer style End =============== */
 
 
 
