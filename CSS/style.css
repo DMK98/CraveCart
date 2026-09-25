@@ -75,6 +75,7 @@ img {
 .mt-half {
     margin-top: .5rem;
 }
+
 .mt-one-half {
     margin-top: 1.5rem;
 }
@@ -242,10 +243,99 @@ h4 {
     padding: 1rem 0 1rem 0;
 }
 
-/* this will be deleted after adding JS */
+/*  CARD POPup TAB  */
+
+.cart-tab {
+    background: var(--hint-yellow);
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: 25rem;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.1) -10px -10px 20px;
+}
+
+.cart-list {
+    flex: 1;
+    width: 100%;
+    margin-top: 1.5rem;
+    overflow: auto;
+}
+
+.cart-list::-webkit-scrollbar {
+    width: 0;
+
+}
+
+.total-container {
+    width: 100%;
+    background: var(--gold-finger);
+    text-align: center;
+    margin-block: 1rem;
+    padding-block: 1rem;
+}
+
+.total-container h4 {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+
+}
+
+
+.btn-container .btn {
+    background: var(--lead);
+    transition: .3s ease-in-out;
+}
+
+.btn-container .btn:hover {
+    background: var(--gold-finger);
+    color: var(--lead);
+}
+
+.cartlist-item-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: .8rem;
+    padding: .7rem 1rem;
+}
+
+.cart-list .cartlist-item-container:nth-child(even) {
+    background: var(--eye-ball);
+}
+
+.cartlist-item-container .cart-item-image img {
+    width: 5rem;
+}
+
+.cartlist-item-container h4 {
+    font-size: 1.3rem;
+    color: var(--lead);
+}
+
+
+.cart-list .cartlist-item-container .item-total {
+    font-weight: 400;
+    margin-top: .3rem;
+}
+
+.cart-list i {
+    font-size: 1.3rem;
+    margin-inline: .6rem;
+}
+
+/* this will be deleted after adding JS START HERE */
 .menu-container {
     border: 1px solid;
 }
+
+/* this will be deleted after adding JS END HERE */
 
 /* ========== Section Menu end=============== */
 /* ========== Review Section Start=============== */
@@ -329,32 +419,57 @@ input[type="email"] {
 input[type="email"]:focus {
     outline: none;
 }
+
+.subscribe h2 {
+    font-size: 3rem
+}
+
 /* ========== subscribe  Section end =============== */
 
 /* ==========footer style start =============== */
 
-.footer-container{
+.footer-container {
     margin-top: 10rem;
-    padding-block:4rem ;
-    background: var(--hint-yellow);    
+    padding-block: 4rem;
+    background: var(--hint-yellow);
 }
-.footer-wrapper{
+
+.footer-wrapper {
     flex: 1;
+    flex-basis: 150px;
 }
-.footer-wrapper .social-icon{
+
+.footer-wrapper:nth-child(1) {
+    flex: 300px;
+}
+
+.footer-container .flex {
+    align-items: flex-start;
+}
+
+.footer-wrapper .social-icon {
     background: var(--pure-white);
-} 
-.footer-wrapper .social-icon:hover{
+}
+
+.footer-wrapper .social-icon:hover {
     background: var(--lead);
     color: var(--pure-white);
 }
-.footer-link{
+
+.footer-link {
     color: grey;
     font-size: 1.1rem;
+    transition: .3s ease-in-out;
 }
-.footer-link:hover{
+
+.footer-link:hover {
     color: var(--lead);
 }
+
+.footer-container ul li {
+    margin-block: 1rem;
+}
+
 /* ==========footer style End =============== */
 
 
@@ -457,7 +572,7 @@ input[type="email"]:focus {
     }
 
     .application .content h2 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
 }
