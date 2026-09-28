@@ -1,9 +1,78 @@
 [
     {
+        "id": 1,
+        "name": "Double Beef Burger",
+        "price": "$200",
+        "image": "./Images/burger.png"
+    },
+    {
+        "id": 1,
+        "name": "pizza",
+        "price": "$100",
+        "image": "./Images/pizza.png"
+    },
+    {
+        "id": 1,
+        "name": "sandwich",
+        "price": "$25",
+        "image": "./Images/burger.png"
+    },
+    {
+        "id": 1,
+        "name": "chicken-roll",
+        "price": "$120",
+        "image": "./Images/chicken-roll.png"
+    },
+    {
+        "id": 1,
+        "name": "fried-chicken",
+        "price": "$250",
+        "image": "./Images/fried-chicken.png"
+    },
+    {
+        "id": 1,
+        "name": "spaghetti",
+        "price": "$60",
+        "image": "./Images/spaghetti.png"
+    },
+    {
+        "id": 1,
+        "name": "lasagna",
+        "price": "$90",
+        "image": "./Images/lasagna.png"
+    },
+    {
+        "id": 1,
+        "name": "spring-roll",
+        "price": "$45",
+        "image": "./Images/spring-roll.png"
+    },
+     {
         "id":1,
-        "name":"Double Beef Burger",
-        "price":"$200",
-        "image":"./Images/burger.png"
+        "name":"samosa",
+        "price":"$30",
+        "image":"./Images/samosa.jpeg"
+
+    },
+     {
+        "id":1,
+        "name":"pavbhaji",
+        "price":"$50",
+        "image":"./Images/pavbhaji.jpeg"
+
+    },
+     {
+        "id":1,
+        "name":"chowmein",
+        "price":"$70",
+        "image":"./Images/chowmein.jpeg"
+
+    },
+     {
+        "id":1,
+        "name":"momos",
+        "price":"$100",
+        "image":"./Images/momos.jpeg"
 
     }
 ]
