@@ -304,9 +304,8 @@ h4 {
 
 .cartlist-item-container {
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    gap: .8rem;
+    align-items: center;   
+    gap: 1rem;
     padding: .7rem 1rem;
 }
 
@@ -328,6 +327,9 @@ h4 {
     font-weight: 400;
     margin-top: .3rem;
 }
+.detail{
+    flex: 2;
+}
 
 .cart-list i {
     font-size: 1.3rem;
@@ -338,6 +340,8 @@ h4 {
 .menu-container {
     border: 1px solid;
 }
+
+.menu-card-list a:hover{background: var(--lead); }
 
 /* this will be deleted after adding JS END HERE */
 
